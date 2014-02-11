@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Pushtape Designer feature.
+ */
+
+include_once 'pushtape_designer.features.inc';
