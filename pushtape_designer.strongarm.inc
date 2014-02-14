@@ -15,10 +15,15 @@ function pushtape_designer_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_classes_exclude';
   $strongarm->value = 'clear
+
 clearfix
+
 sweaver
+
 sweaver-hovered
+
 sweaver-clicked
+
 sweaver-clicked-temp';
   $export['sweaver_classes_exclude'] = $strongarm;
 
@@ -34,32 +39,59 @@ sweaver-clicked-temp';
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_ctools_allowed_properties';
   $strongarm->value = '-moz-border-radius
+
 -webkit-border-radius
+
 border-top-right-radius
+
 border-bottom-right-radius
+
 border-bottom-left-radius
+
 border-top-left-radius
+
 webkit-border-top-right-radius
+
 webkit-border-bottom-right-radius
+
 webkit-border-bottom-left-radius
+
 webkit-border-top-left-radius
+
 moz-border-radius-topright
+
 moz-border-radius-bottomright
+
 moz-border-radius-bottomleft
+
 moz-border-radius-topleft
+
 position
+
 top
+
 left
+
 bottom
+
 right
+
 border-collapse
+
 border-spacing
+
 list-style-image
+
 list-style-type
+
 min-width
+
 max-width
+
 min-height
+
 max-height
+
 visibility';
   $export['sweaver_ctools_allowed_properties'] = $strongarm;
 
@@ -98,11 +130,7 @@ visibility';
     ),
     'four' => array(
       'title' => 'Other',
-      'properties' => array(
-        0 => 'width',
-        1 => 'height',
-        2 => 'create-custom-code',
-      ),
+      'properties' => array(),
     ),
   );
   $export['sweaver_editor_form_configuration'] = $strongarm;
@@ -119,15 +147,25 @@ visibility';
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_paths';
   $strongarm->value = 'admin*
+
 node/add*
+
 node/*/edit
+
 node/*/panel*
+
 panels/ajax*
+
 user/*/edit
+
 batch*
+
 wysiwyg_imageupload/*
+
 media/*
+
 taxonomy/*
+
 imce';
   $export['sweaver_paths'] = $strongarm;
 
@@ -136,17 +174,17 @@ imce';
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_plugins_weight';
   $strongarm->value = array(
-    'sweaver_plugin' => -51,
-    'sweaver_plugin_editor' => -49,
-    'sweaver_plugin_styles' => -48,
-    'sweaver_plugin_advanced' => -47,
-    'sweaver_plugin_palettes' => -46,
-    'sweaver_plugin_images' => -45,
-    'sweaver_plugin_themeswitch' => -44,
-    'sweaver_plugin_themesettings' => -43,
-    'sweaver_plugin_themeclasses' => -42,
-    'sweaver_plugin_fontface' => -41,
-    'sweaver_plugin_kb' => -39,
+    'sweaver_plugin_editor' => '-49',
+    'sweaver_plugin_styles' => '-48',
+    'sweaver_plugin_palettes' => '-46',
+    'sweaver_plugin_advanced' => '-47',
+    'sweaver_plugin_images' => '-45',
+    'sweaver_plugin_themeswitch' => '-44',
+    'sweaver_plugin_themesettings' => '-43',
+    'sweaver_plugin_themeclasses' => '-42',
+    'sweaver_plugin_fontface' => '-41',
+    'sweaver_plugin_kb' => '-39',
+    'sweaver_plugin_toolbar' => '-50',
   );
   $export['sweaver_plugins_weight'] = $strongarm;
 
@@ -161,7 +199,7 @@ imce';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_plugin_images_styles';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['sweaver_plugin_images_styles'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -181,30 +219,30 @@ imce';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'sweaver_plugin_status_sweaver_plugin_advanced';
-  $strongarm->value = TRUE;
-  $export['sweaver_plugin_status_sweaver_plugin_advanced'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_plugin_status_sweaver_plugin_editor';
-  $strongarm->value = TRUE;
+  $strongarm->value = 1;
   $export['sweaver_plugin_status_sweaver_plugin_editor'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_plugin_status_sweaver_plugin_images';
-  $strongarm->value = TRUE;
+  $strongarm->value = 1;
   $export['sweaver_plugin_status_sweaver_plugin_images'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_plugin_status_sweaver_plugin_styles';
-  $strongarm->value = TRUE;
+  $strongarm->value = 0;
   $export['sweaver_plugin_status_sweaver_plugin_styles'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'sweaver_plugin_status_sweaver_plugin_themeswitch';
+  $strongarm->value = 1;
+  $export['sweaver_plugin_status_sweaver_plugin_themeswitch'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -218,15 +256,25 @@ imce';
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_selectors_exclude';
   $strongarm->value = '#sweaver-frontend
+
 #admin-menu
+
 .colorpicker
+
 #sweaver-messages
+
 #sweaver-popup
+
 #follow-link
+
 #toolbar
+
 #l10n-client
+
 #navbar-bar
+
 #navbar-tray
+
 #panels-ipe-control-container';
   $export['sweaver_selectors_exclude'] = $strongarm;
 
