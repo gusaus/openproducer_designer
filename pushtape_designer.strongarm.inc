@@ -241,7 +241,7 @@ imce';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_plugin_status_sweaver_plugin_styles';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['sweaver_plugin_status_sweaver_plugin_styles'] = $strongarm;
 
   $strongarm = new stdClass();
