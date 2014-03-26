@@ -101,14 +101,13 @@ visibility';
   $strongarm->name = 'sweaver_editor_form_configuration';
   $strongarm->value = array(
     'one' => array(
-      'title' => 'Font',
       'properties' => array(
         0 => 'font-family',
         1 => 'font-properties-wrapper',
       ),
+      'title' => 'Font',
     ),
     'two' => array(
-      'title' => 'Background',
       'properties' => array(
         0 => 'background-color',
         1 => 'background-image',
@@ -116,9 +115,9 @@ visibility';
         3 => 'background-attachment',
         4 => 'background-position',
       ),
+      'title' => 'Background',
     ),
     'three' => array(
-      'title' => 'Borders & Spacing',
       'properties' => array(
         0 => 'position-settings',
         1 => 'border-style',
@@ -127,14 +126,11 @@ visibility';
         4 => 'border-spacing',
         5 => 'vertical-align',
       ),
+      'title' => 'Borders & Spacing',
     ),
     'four' => array(
       'title' => 'Other',
-      'properties' => array(
-        0 => 'width',
-        1 => 'height',
-        2 => 'create-custom-code',
-      ),
+      'properties' => array(),
     ),
   );
   $export['sweaver_editor_form_configuration'] = $strongarm;
@@ -153,24 +149,16 @@ visibility';
   $strongarm->value = 'admin*
 
 node/add*
-
 node/*/edit
-
 node/*/panel*
-
 panels/ajax*
-
 user/*/edit
-
 batch*
-
 wysiwyg_imageupload/*
-
 media/*
-
 taxonomy/*
-
 imce';
+
   $export['sweaver_paths'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -290,24 +278,16 @@ imce';
   $strongarm->value = '#sweaver-frontend
 
 #admin-menu
-
 .colorpicker
-
 #sweaver-messages
-
 #sweaver-popup
-
 #follow-link
-
 #toolbar
-
 #l10n-client
-
 #navbar-bar
-
 #navbar-tray
-
 #panels-ipe-control-container';
+
   $export['sweaver_selectors_exclude'] = $strongarm;
 
   $strongarm = new stdClass();
