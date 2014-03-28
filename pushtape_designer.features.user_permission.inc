@@ -15,7 +15,7 @@ function pushtape_designer_user_default_permissions() {
     'name' => 'use editor',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'designer' => 'designer',
     ),
     'module' => 'sweaver',
   );
