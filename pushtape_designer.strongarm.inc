@@ -247,9 +247,7 @@ imce';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_selectors_exclude';
-  $strongarm->value = '#sweaver-frontend
-
-#admin-menu
+  $strongarm->value = '#admin-menu
 .colorpicker
 #sweaver-frontend
 #sweaver-messages
@@ -304,7 +302,7 @@ imce';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_skin';
-  $strongarm->value = 'grey';
+  $strongarm->value = 'producer';
   $export['sweaver_skin'] = $strongarm;
 
   $strongarm = new stdClass();
