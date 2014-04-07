@@ -14,16 +14,63 @@ function pushtape_designer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_classes_exclude';
-  $strongarm->value = 'clearfix
+  $strongarm->value = 'view-content
+view
+view-releases
+views-responsive-grid
+views-responsive-grid-horizontal
+div
+absolute
+clearfix
+panel-pane
+panel-panel
+panel-panel-inner
+responsive-menus
+responsive-menus-0-0
 sweaver
 sweaver-hovered
 sweaver-clicked
 sweaver-clicked-temp
-.coltrane-double-container
-.coltrane-double-column 
-.coltrane-double-column-inner
-.coltrane-double-column2
-.coltrane-double-column2-inner  ';
+bonham-flipped-container
+bonham-flipped-content
+bonham-flipped-content-inner
+bonham-flipped-sidebar
+bonham-flipped-sidebar-inner
+bowie-container 
+bowie-content 
+bowie-content-region
+coltrane-double-column 
+coltrane-double-column-inner
+coltrane-double-column1
+coltrane-double-column1-inner
+coltrane-double-column2
+coltrane-double-column2-inner
+coltrane-double-column-content
+coltrane-double-column-content-region
+coltrane-double-column-content-region-inner
+coltrane-double-container
+coltrane-double-container-inner
+coltrane-double-first-column-content
+coltrane-double-footer
+coltrane-double-footer-inner
+coltrane-double-header
+coltrane-double-header-inner
+coltrane-double-second-column-content
+floyd-flipped-container
+floyd-flipped-content
+floyd-flipped-content-inner
+floyd-flipped-sidebar
+santana-flipped-container
+santana-flipped-content-header
+santana-flipped-content-container-column-container
+santana-flipped-column
+santana-flipped-content-column2
+santana-flipped-column-inner
+santana-flipped-content-column2-inner
+santana-flipped-content-container
+santana-flipped-content-container-inner
+santana-flipped-sidebar
+l-main';
   $export['sweaver_classes_exclude'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -272,29 +319,42 @@ imce';
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_selector_order';
   $strongarm->value = array(
-    'body' => '0',
-    'menu' => '50',
-    'navigation' => '50',
-    'read_more' => '51',
-    'h1' => '52',
-    'h2' => '53',
-    'h3' => '54',
-    'li' => '55',
-    'link' => '56',
-    'ol' => '57',
-    'p' => '58',
-    'ul' => '59',
-    'form' => '60',
-    'label' => '61',
-    'input' => '62',
-    'textarea' => '63',
-    'submit' => '64',
-    'allids' => '97',
-    'allclasses' => '98',
-    'alltags' => '99',
-    'span' => '100',
-    'div' => '100',
+    'body' => '-100',
+    'menu' => '-98',
+    'navigation' => '-97',
+    'read_more' => '-96',
+    'h1' => '-92',
+    'h2' => '-91',
+    'h3' => '-90',
+    'li' => '-89',
+    'link' => '-88',
+    'ol' => '-83',
+    'p' => '-84',
+    'ul' => '-82',
+    'form' => '-81',
+    'label' => '-80',
+    'input' => '-79',
+    'textarea' => '-77',
+    'submit' => '-76',
+    'allids' => '-75',
+    'allclasses' => '-76',
+    'alltags' => '-81',
+    'span' => '-73',
+    'div' => '-80',
     'panels_pane' => '20',
+    'header' => '-87',
+    'main_region' => '-86',
+    'footer' => '-85',
+    'page' => '-71',
+    'content' => '-72',
+    'branding_region' => '-99',
+    'block' => '-87',
+    'content_block' => '-95',
+    'pane_entity_field' => '-73',
+    'field' => '-74',
+    'page_title' => '-93',
+    'site_name' => '-94',
+    'widget' => '-78',
   );
   $export['sweaver_selector_order'] = $strongarm;
 
