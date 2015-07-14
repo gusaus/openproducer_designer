@@ -1,9 +1,8 @@
-name = Pushtape Designer
+name = OpenProducer Designer
 description = This feature houses the custom designer thing.
 core = 7.x
-package = Pushtape
-version = 7.x-1.0-panels
-project = pushtape_designer
+package = OpenProducer
+project = openproducer_designer
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = strongarm
@@ -50,3 +49,7 @@ features[variable][] = sweaver_selectors_source
 features[variable][] = sweaver_skin
 features[variable][] = sweaver_styles_delete_tab
 features[variable][] = sweaver_translate_path
+
+version = "7.x-1.0-beta25"
+core = "7.x"
+project = "openproducer_designer"

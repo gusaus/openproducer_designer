@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * pushtape_designer.features.user_permission.inc
+ * openproducer_designer.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function pushtape_designer_user_default_permissions() {
+function openproducer_designer_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'use editor'.
