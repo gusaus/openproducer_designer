@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * pushtape_designer.strongarm.inc
+ * openproducer_designer.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function pushtape_designer_strongarm() {
+function openproducer_designer_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * pushtape_designer.sweaver.inc
+ * openproducer_designer.sweaver.inc
  */
 
 /**
  * Implements hook_default_sweaver_selector().
  */
-function pushtape_designer_default_sweaver_selector() {
+function openproducer_designer_default_sweaver_selector() {
   $export = array();
 
     $selector = new stdClass;
