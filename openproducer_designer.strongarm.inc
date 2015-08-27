@@ -15,6 +15,7 @@ function openproducer_designer_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_classes_exclude';
   $strongarm->value = 'view-content
+
 view
 view-releases
 views-responsive-grid
@@ -26,7 +27,6 @@ panel-pane
 panel-panel
 panel-panel-inner
 responsive-menus
-responsive-menus-0-0
 sweaver
 sweaver-hovered
 sweaver-clicked
@@ -70,9 +70,8 @@ santana-flipped-content-column2-inner
 santana-flipped-content-container
 santana-flipped-content-container-inner
 santana-flipped-sidebar
-l-main';
+';
   $export['sweaver_classes_exclude'] = $strongarm;
-
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -85,6 +84,7 @@ l-main';
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_ctools_allowed_properties';
   $strongarm->value = '-moz-border-radius
+
 -webkit-border-radius
 border-top-right-radius
 border-bottom-right-radius
@@ -149,7 +149,10 @@ visibility';
     ),
     'four' => array(
       'title' => 'Other',
-      'properties' => array(),
+      'properties' => array(
+        0 => 'width',
+        1 => 'height',
+      ),
     ),
   );
   $export['sweaver_editor_form_configuration'] = $strongarm;
@@ -176,8 +179,8 @@ batch*
 wysiwyg_imageupload/*
 media/*
 taxonomy/*
-imce';
 
+imce';
   $export['sweaver_paths'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -295,6 +298,7 @@ imce';
   $strongarm->api_version = 1;
   $strongarm->name = 'sweaver_selectors_exclude';
   $strongarm->value = '#admin-menu
+
 .colorpicker
 #sweaver-frontend
 #sweaver-messages
@@ -303,8 +307,8 @@ imce';
 #toolbar
 #l10n-client
 #navbar-bar
-#navbar-tray';
 
+#navbar-tray';
   $export['sweaver_selectors_exclude'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -320,41 +324,46 @@ imce';
   $strongarm->name = 'sweaver_selector_order';
   $strongarm->value = array(
     'body' => '-100',
-    'menu' => '-98',
+    'menu' => '-99',
     'navigation' => '-97',
-    'read_more' => '-96',
-    'h1' => '-92',
-    'h2' => '-91',
-    'h3' => '-90',
-    'li' => '-89',
+    'read_more' => '-70',
+    'h1' => '-91',
+    'h2' => '-90',
+    'h3' => '-89',
+    'li' => '-86',
     'link' => '-88',
-    'ol' => '-83',
-    'p' => '-84',
-    'ul' => '-82',
-    'form' => '-81',
-    'label' => '-80',
-    'input' => '-79',
-    'textarea' => '-77',
-    'submit' => '-76',
-    'allids' => '-75',
-    'allclasses' => '-76',
-    'alltags' => '-81',
-    'span' => '-73',
+    'ol' => '-85',
+    'p' => '-87',
+    'ul' => '-84',
+    'form' => '-83',
+    'label' => '-82',
+    'input' => '-78',
+    'textarea' => '-80',
+    'submit' => '-74',
+    'allids' => '-73',
+    'allclasses' => '-75',
+    'alltags' => '-82',
+    'span' => '-83',
     'div' => '-80',
     'panels_pane' => '20',
-    'header' => '-87',
-    'main_region' => '-86',
-    'footer' => '-85',
-    'page' => '-71',
-    'content' => '-72',
+    'header' => '-96',
+    'main_region' => '-95',
+    'footer' => '-92',
+    'page' => '-93',
+    'content' => '-94',
     'branding_region' => '-99',
     'block' => '-87',
     'content_block' => '-95',
     'pane_entity_field' => '-73',
-    'field' => '-74',
+    'field' => '-72',
     'page_title' => '-93',
-    'site_name' => '-94',
-    'widget' => '-78',
+    'site_name' => '-98',
+    'widget' => '-81',
+    'navbar' => '-97',
+    'well' => '-82',
+    'main_wrapper' => '-95',
+    'panel' => '-81',
+    'jumbotron' => '20',
   );
   $export['sweaver_selector_order'] = $strongarm;
 
